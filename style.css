@@ -348,45 +348,138 @@ footer p {
 
 /* TELEFONY */
 
+
+/* TELEFONY */
+
 @media (max-width: 800px) {
 
     header {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
+        padding: 20px 5%;
     }
 
     nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
 
     nav a {
         margin: 0;
     }
 
-    .baner, .onas, .uslugi, .zalety {
+    /* BANER */
+
+    .baner {
         flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        min-height: auto;
+        padding: 60px 6%;
     }
 
-    .baner div, .baner img, .onas img {
+    .baner div {
         width: 100%;
     }
 
     .baner h1 {
-        font-size: 38px;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .baner p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .baner img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    /* O NAS */
+
+    .onas {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .onas img {
+        width: 100%;
+        height: 280px;
+    }
+
+    /* USŁUGI I ZALETY */
+
+    .uslugi, .zalety {
+        flex-direction: column;
     }
 
     .uslugi a, .zalety article {
         width: 100%;
     }
 
-    section {
-        padding: 60px 6%;
+    /* NAGŁÓWKI */
+
+    .onas h2,
+    .kontakt h2,
+    .dlaczego h2,
+    #uslugi > h2 {
+        font-size: 30px;
     }
 
-    .onas h2, .kontakt h2, .dlaczego h2 {
-        font-size: 30px;
+    /* SZKOLENIA */
+
+    .szkolenia {
+        padding: 50px 6%;
+    }
+
+    .szkolenia h1 {
+        font-size: 32px;
+    }
+
+    .szkolenia h2 {
+        font-size: 25px;
+    }
+
+    /* KONTAKT */
+
+    .szkolenia-kontakt {
+        padding: 40px 6%;
+    }
+
+    /* ODSTĘPY */
+
+    section {
+        padding: 55px 6%;
+    }
+}
+
+/* BARDZO MAŁE TELEFONY */
+
+@media (max-width: 480px) {
+
+    .baner {
+        padding: 45px 6%;
+    }
+
+    .baner h1 {
+        font-size: 29px;
+    }
+
+    .baner p {
+        font-size: 15px;
+    }
+
+    .baner img {
+        max-height: 230px;
+    }
+
+    nav a {
+        font-size: 13px;
     }
 }
