@@ -61,6 +61,8 @@ section {
 
 .baner div {
     width: 50%;
+    min-width: 0;
+    flex: 1;
 }
 
 .baner h1 {
@@ -90,10 +92,13 @@ section {
 }
 
 .baner img {
-    width: 100%;
+    width: 50%;
+    max-width: 50%;
+    min-width: 0;
     height: auto;
     object-fit: contain;
     border-radius: 15px;
+    flex: 1;
 }
 
 /* O NAS */
@@ -346,66 +351,46 @@ footer p {
 
 
 
-/* TELEFONY */
+
 
 
 /* TELEFONY */
 
 @media (max-width: 800px) {
 
-    header {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 5%;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    nav a {
-        margin: 0;
-    }
-
-    /* BANER */
-
     .baner {
         flex-direction: column;
-        text-align: center;
-        gap: 30px;
         min-height: auto;
-        padding: 60px 6%;
+        padding: 45px 6%;
+        gap: 25px;
+        width: 100%;
     }
 
     .baner div {
         width: 100%;
-    }
-
-    .baner h1 {
-        font-size: 36px;
-        line-height: 1.2;
-    }
-
-    .baner p {
-        font-size: 16px;
-        line-height: 1.6;
+        flex: none;
+        text-align: center;
     }
 
     .baner img {
         width: 100%;
+        max-width: 100%;
         height: auto;
-        max-height: 300px;
+        max-height: 220px;
         object-fit: contain;
+        flex: none;
     }
 
-    /* O NAS */
+    .baner h1 {
+        font-size: 32px;
+    }
+
+    .baner p {
+        font-size: 16px;
+    }
 
     .onas {
         flex-direction: column;
-        gap: 30px;
     }
 
     .onas img {
@@ -413,73 +398,30 @@ footer p {
         height: 280px;
     }
 
-    /* USŁUGI I ZALETY */
-
-    .uslugi, .zalety {
+    .uslugi,
+    .zalety {
         flex-direction: column;
     }
 
-    .uslugi a, .zalety article {
+    .uslugi a,
+    .zalety article {
         width: 100%;
     }
-
-    /* NAGŁÓWKI */
-
-    .onas h2,
-    .kontakt h2,
-    .dlaczego h2,
-    #uslugi > h2 {
-        font-size: 30px;
-    }
-
-    /* SZKOLENIA */
-
-    .szkolenia {
-        padding: 50px 6%;
-    }
-
-    .szkolenia h1 {
-        font-size: 32px;
-    }
-
-    .szkolenia h2 {
-        font-size: 25px;
-    }
-
-    /* KONTAKT */
-
-    .szkolenia-kontakt {
-        padding: 40px 6%;
-    }
-
-    /* ODSTĘPY */
 
     section {
         padding: 55px 6%;
     }
-}
 
-/* BARDZO MAŁE TELEFONY */
+}
 
 @media (max-width: 480px) {
 
-    .baner {
-        padding: 45px 6%;
-    }
-
     .baner h1 {
-        font-size: 29px;
-    }
-
-    .baner p {
-        font-size: 15px;
+        font-size: 27px;
     }
 
     .baner img {
-        max-height: 230px;
+        max-height: 180px;
     }
 
-    nav a {
-        font-size: 13px;
-    }
 }
