@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F7FA;
+    color: #06447F;
+}
+
+header {
+    background-color: #06447F;
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+header h2 span {
+    color: #65BD35;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #65BD35;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+/* BANER */
+
+.baner {
+    background-color: #06447F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 550px;
+}
+
+.baner div {
+    width: 50%;
+}
+
+.baner h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.baner p {
+    color: #D5E2EF;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.baner a {
+    display: inline-block;
+    background-color: #39A935;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.baner a:hover {
+    background-color: #65BD35;
+}
+
+.baner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* O NAS */
+
+.onas {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.onas img {
+    width: 48%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.onas h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.onas p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* USLUGI */
+
+#uslugi {
+    text-align: center;
+}
+
+#uslugi > h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.uslugi {
+    display: flex;
+    gap: 25px;
+}
+
+.uslugi a {
+    width: 25%;
+    text-decoration: none;
+    color: #06447F;
+}
+
+.uslugi article {
+    background-color: white;
+    padding: 35px 25px;
+    min-height: 190px;
+    border-radius: 12px;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 5px 20px rgba(0, 53, 104, 0.05);
+    transition: 0.3s;
+}
+
+.uslugi article:hover {
+    transform: translateY(-8px);
+    border-bottom: 4px solid #39A935;
+    box-shadow: 0 10px 25px rgba(0, 53, 104, 0.12);
+}
+
+.uslugi h3 {
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.uslugi p {
+    color: #06447F;
+    line-height: 1.6;
+}
+
+/* DLACZEGO MY */
+
+.dlaczego {
+    background-color: #06447F;
+    color: white;
+    text-align: center;
+}
+
+.dlaczego h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.zalety {
+    display: flex;
+    gap: 25px;
+}
+
+.zalety article {
+    background-color: #003568;
+    border: 1px solid #315779;
+    padding: 35px;
+    width: 33%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.zalety article:hover {
+    border-color: #39A935;
+    transform: translateY(-5px);
+}
+
+.zalety h3 {
+    color: #65BD35;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.zalety p {
+    color: #D5E2EF;
+    line-height: 1.6;
+}
+
+/* KONTAKT */
+
+.kontakt {
+    background-color: white;
+    text-align: center;
+}
+
+.kontakt h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.kontakt p {
+    margin: 15px;
+    color: #64748b;
+}
+
+.kontakt p:first-child {
+    color: #39A935;
+    font-weight: bold;
+}
+
+/* STOPKA */
+
+footer {
+    background-color: #003568;
+    color: white;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+footer p {
+    color: #D5E2EF;
+}
+
+/* SZKOLENIA BHP */
+
+.szkolenia {
+    background-color: white;
+    padding: 70px 8%;
+}
+
+.szkolenia h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #06447F;
+}
+
+.szkolenia h2 {
+    font-size: 30px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: #06447F;
+}
+
+.szkolenia h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #39A935;
+}
+
+.szkolenia p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.szkolenia ul,
+.szkolenia ol {
+    margin-left: 30px;
+    margin-bottom: 25px;
+    color: #64748b;
+    line-height: 2;
+}
+
+.szkolenia li {
+    padding-left: 5px;
+}
+
+.szkolenia strong {
+    color: #06447F;
+}
+
+.szkolenia a {
+    color: #39A935;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.szkolenia a:hover {
+    color: #06447F;
+    text-decoration: underline;
+}
+
+/* KONTAKT NA PODSTRONIE */
+
+.szkolenia-kontakt {
+    background-color: #06447F;
+    color: white;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.szkolenia-kontakt h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.szkolenia-kontakt p {
+    color: #D5E2EF;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.szkolenia-kontakt a {
+    display: inline-block;
+    background-color: #39A935;
+    color: white;
+    padding: 14px 25px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.szkolenia-kontakt a:hover {
+    background-color: #65BD35;
+}
+
+
+
+/* TELEFONY */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .baner, .onas, .uslugi, .zalety {
+        flex-direction: column;
+    }
+
+    .baner div, .baner img, .onas img {
+        width: 100%;
+    }
+
+    .baner h1 {
+        font-size: 38px;
+    }
+
+    .uslugi a, .zalety article {
+        width: 100%;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .onas h2, .kontakt h2, .dlaczego h2 {
+        font-size: 30px;
+    }
+}
